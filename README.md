@@ -21,7 +21,7 @@ or does not enter a valid phone number a warning message is shown on the screen.
 3. If the user enters a New Host's name, an acknowledgement message is shown with two more blank entries<br />
 of Host's Phone number and Email address which are to be entered by the visitor.<br />
 
-**A pictorial representation of all the features and added as a pdf file for the user :**
+**A pictorial representation of all the features are added as a pdf file for the user :**
 
 **Links to download :**
 1. You can download latest version of Python 3 from - https://www.python.org/downloads/ <br />
