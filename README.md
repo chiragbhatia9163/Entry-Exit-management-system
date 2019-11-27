@@ -14,12 +14,14 @@ which inturn triggers an email to him/her stating his/her visit details.<br />
 5. The database is updated at every Entry and Exit operation with Entry and Exit time of the Visitor.<br />
 
 **Additional Features :**
-1. Everytime starts only after the user enters MySQL server connection password. This acts as a security measure<br />
+1. The application starts only after the user enters MySQL server connection password. This acts as a security measure<br />
 so that unauthorized people can't access the database.<br />
 2. As all the entries are compulsary for the user to enter, if he/she leaves any entry empty<br />
 or does not enter a valid phone number a warning message is shown on the screen.<br />
 3. If the user enters a New Host's name, an acknowledgement message is shown with two more blank entries<br />
 of Host's Phone number and Email address which are to be entered by the visitor.<br />
+
+**A pictorial representation of all the features and added as a pdf file for the user :**
 
 **Links to download :**
 1. You can download latest version of Python 3 from - https://www.python.org/downloads/ <br />
