@@ -21,7 +21,15 @@ or does not enter a valid phone number a warning message is shown on the screen.
 3. If the user enters a New Host's name, an acknowledgement message is shown with two more blank entries<br />
 of Host's Phone number and Email address which are to be entered by the visitor.<br />
 
-**A pictorial representation of all the features are added as a pdf file for the user :**
+**Limitations**
+1. As messaging service is paid, hence the trial version does not send SMS everytime to the Host.
+2. There's no option to confirm valid email address and phone number of Visitor and Host.
+
+**Future prospects**
+1. Making a seperate UI for entry of Host data.
+2. Confirming phone numbers and email addresses by sending OTP/confirmation links.
+3. Displaying waiting message for a visitor if the host is in a meeting. And sending SMS/Email to the visitor once the Host is free.
+4. Making the host choose his meeting hours. A message - 'Host not available' can be shown on the screen in this case.
 
 **Links to download :**
 1. You can download latest version of Python 3 from - https://www.python.org/downloads/ <br />
