@@ -21,7 +21,7 @@ or does not enter a valid phone number a warning message is shown on the screen.
 3. If the user enters a New Host's name, an acknowledgement message is shown with two more blank entries<br />
 of Host's Phone number and Email address which are to be entered by the visitor.<br />
 
-**Links to download**<br />
-You can download latest version of Python 3 from - https://www.python.org/downloads/ <br />
+**Links to download :**
+1. You can download latest version of Python 3 from - https://www.python.org/downloads/ <br />
 If you are using Windows OS, then while installing Python make sure that “Add Python to PATH “ is checked. <br />
-You can download latest version of MySQL from - https://dev.mysql.com/downloads/installer/
+2. You can download latest version of MySQL from - https://dev.mysql.com/downloads/installer/
