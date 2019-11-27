@@ -24,6 +24,7 @@ of Host's Phone number and Email address which are to be entered by the visitor.
 **Limitations :**
 1. As messaging service is paid, hence the trial version does not send SMS everytime to the Host.
 2. There's no option to confirm valid email address and phone number of Visitor and Host.
+3. If the sql server password is wrongly entered, the application has to be restarted.
 
 **Future prospects :**
 1. Making a seperate UI for entry of Host data.
