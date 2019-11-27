@@ -3,7 +3,7 @@ Language used - Python (backend and frontend)<br />
 Requirements - MySQL, Python<br />
 Password - Your MySQL server connection password<br />
 
-**Worflow :**
+**Worflow :** <br />
 1. This application works by accepting details like Visitor's Name, Phone number, Email Address, Host Name from the<br />
 user in the Entry tab and storing them at the backend (by creating a mysql database).<br />
 2. If the host details are there in the database, then they are directly fetched or otherwise<br />
@@ -21,7 +21,7 @@ or does not enter a valid phone number a warning message is shown on the screen.
 3. If the user enters a New Host's name, an acknowledgement message is shown with two more blank entries<br />
 of Host's Phone number and Email address which are to be entered by the visitor.<br />
 
-**Links to download**
+**Links to download**<br />
 You can download latest version of Python 3 from - https://www.python.org/downloads/ <br />
 If you are using Windows OS, then while installing Python make sure that “Add Python to PATH “ is checked. <br />
 You can download latest version of MySQL from - https://dev.mysql.com/downloads/installer/
