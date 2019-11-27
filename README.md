@@ -35,3 +35,6 @@ of Host's Phone number and Email address which are to be entered by the visitor.
 1. You can download latest version of Python 3 from - https://www.python.org/downloads/ <br />
 If you are using Windows OS, then while installing Python make sure that “Add Python to PATH “ is checked. <br />
 2. You can download latest version of MySQL from - https://dev.mysql.com/downloads/installer/
+
+**Database details :** <br />
+Visitor Name, Visitor Phone number, Visitor Email ID, Visitor Name, Visitor Phone number, Visitor Email ID, Date of visit, Entry time, status, Exit time
