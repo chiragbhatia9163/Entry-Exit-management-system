@@ -64,7 +64,6 @@ def sms(number,message):
         return requests.get(reqUrl, req_params)
     # get response
     request=sendGetRequest(URL, 'OL9NU0ZHD3RZLAC0MB090ZRR9SQN83UE', 'EB3RLA2NI98AY2SM', 'stage' , number, 'Chirag', message )
-    print(request.text)
 
 p=""
 def return_date_and_time():
