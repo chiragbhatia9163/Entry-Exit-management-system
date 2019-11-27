@@ -63,7 +63,7 @@ def sms(number,message):
         'senderid':senderId}
         return requests.get(reqUrl, req_params)
     # get response
-    request=sendGetRequest(URL, 'OL9NU0ZHD3RZLAC0MB090ZRR9SQN83UE', 'EB3RLA2NI98AY2SM', 'stage' , number, 'Chirag', message )
+    request=sendGetRequest(URL, '4RTRNRVVB4J9P1H1S4GO8N8A4ZR7AZNB', 'JWHLL6Z2DNTCW9WX', 'stage' , number, 'Innova', message )
 
 p=""
 def return_date_and_time():
