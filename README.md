@@ -22,7 +22,7 @@ or does not enter a valid phone number a warning message is shown on the screen.
 of Host's Phone number and Email address which are to be entered by the visitor.<br />
 
 **Limitations :**
-1. As messaging service is paid, hence the trial version does not send SMS everytime to the Host.
+1. As messaging service is paid, the trial version does not send SMS everytime to the Host. Only 3 SMS per day allowed.
 2. There's no option to confirm valid email address and phone number of Visitor and Host.
 3. If the sql server password is wrongly entered, the application has to be restarted.
 
