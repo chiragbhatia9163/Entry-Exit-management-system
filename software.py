@@ -1,4 +1,19 @@
 # -*- coding: utf-8 -*-
+# Download Python and MySQL from link provided in description.
+# Enter MySQL password for server connection with application.
+ 
+# Functions Description :
+# database_connection() - To establish connection between application and database.
+#                          It also makes a new database and table if it does not exists.
+# database_entry() - To enter values in the database.
+# get_input_entry(), save_input_entry() - Accepts values entered by visitor during entry.
+# get_input_exit(), save_input_exit() - Accepts values entered by visitor during entry.
+# send_email() - To send email to the Host and Visitor.
+# sms() To send sms to the host.
+# return_date_and_time() - Returns current date and time.
+# database_check_hostname() - Checks if host's name exists in database or not.
+# database_check_exit() - Checks visitor's name in database before exit.
+
 import tkinter as tk
 from tkinter import ttk
 from tkinter import simpledialog
