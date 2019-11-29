@@ -3,37 +3,46 @@ Language used - Python (backend and frontend)<br />
 Requirements - MySQL, Python<br />
 Password - Your MySQL server connection password<br />
 
-**Worflow :** <br />
-1. This application works by accepting details like Visitor's Name, Phone number, Email Address, Host Name from the<br />
-user in the Entry tab and storing them at the backend (by creating a mysql database).<br />
-2. If the host details are there in the database, then they are directly fetched or otherwise<br />
-the Host's Phone number and Email Address are to be entered which will be used for future entries as well.<br />
-3. Once the visitor checks in, an Email and SMS is triggered to the Host informing him of the details of the visitor.<br />
-4. After the meeting or visit is over, the visitor is supposed to enter his details in the Exit tab,<br />
-which inturn triggers an email to him/her stating his/her visit details.<br />
-5. The database is updated at every Entry and Exit operation with Entry and Exit time of the Visitor.<br />
+The Application has two parts:<br />
+1. Host Entry<br />
+2. Visitor's Entry/Exit
+
+**Host**
+1. This is the first part of the application which is to be done before entering visitor's details.
+2. It works by accepting details like Host's Name, Host's Phone number, Host's Email Address from the<br />
+user and storing them at the backend (by creating a mysql database).
+
+**Visitor :** <br />
+1. This part works by accepting details like Visitor's Name, Phone number, Email Address, Host Name from the<br />
+user in the Entry tab and storing them at the backend (by creating a seperate mysql database).
+2. If the host details are there in the already created database, then they are directly fetched or otherwise
+the 'Details not found' is shown on the screen.
+3. After the visitor chooses the right Host and checks in, an Email and SMS is triggered to the Host informing him about the details of the visitor.<br />
+4. After the meeting ends, the visitor is supposed to enter his details in the Exit tab, which inturn triggers an email to him/her about his/her visit details.<br />
+5. The database is updated at every Entry and Exit operation with Entry and Exit time stamp of the Visitor.<br />
 
 **Additional Features :**
 1. The application starts only after the user enters MySQL server connection password. This acts as a security measure<br />
 so that unauthorized people can't access the database.<br />
 2. As all the entries are compulsary for the user to enter, if he/she leaves any entry empty<br />
 or does not enter a valid phone number a warning message is shown on the screen.<br />
-3. If the user enters a New Host's name, an acknowledgement message is shown with two more blank entries<br />
-of Host's Phone number and Email address which are to be entered by the visitor.<br />
+3. If the host is already present in the database then the same hosts' details cannot be entered again.
 
 **Limitations :**
 1. As messaging service is paid, the trial version does not send SMS everytime to the Host. Only 3 SMS per day allowed.
-2. There's no option to confirm valid email address and phone number of Visitor and Host.
+2. There's no option to confirm valid Email ID and Phone no of Visitor and Host. Entering wrong Email ID and Phone no leads to error.
 3. If the sql server password is wrongly entered, the application has to be restarted.
+4. Host's details once entered cannot be changed.
 
 **Future prospects :**
-1. Making a seperate UI for entry of Host data.
-2. Confirming phone numbers and email addresses by sending OTP/confirmation links.
-3. Displaying waiting message for a visitor if the host is in a meeting. And sending SMS/Email to the visitor once the Host is free.
-4. Making the host choose his meeting hours. A message - 'Host not available' can be shown on the screen in this case.
+1. Confirming phone numbers and email addresses by sending OTP/confirmation links.
+2. Displaying waiting message for a visitor if the host is in a meeting. And sending SMS/Email to the visitor once the Host is free.
+3. Making the host choose his meeting hours. A message - 'Host not available' can be shown on the screen in this case.
+4. Update feature for Host's details, by providing a seperate update tab in Host UI.
 
 **Database details :** <br />
-Visitor Name, Visitor Phone number, Visitor Email ID, Visitor Name, Visitor Phone number, Visitor Email ID, Date of visit, Entry time, status, Exit time <br />
+1. Visitor Name, Visitor Phone number, Visitor Email ID, Host Name, Date of visit, Entry time, status, Exit time <br />
+2. Host Name, Host Phone number, Host Email ID
 
 **Links to download :**
 1. You can download latest version of Python 3 from - https://www.python.org/downloads/ <br />
