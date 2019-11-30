@@ -39,6 +39,7 @@ or does not enter a valid phone number a warning message is shown on the screen.
 2. Displaying waiting message for a visitor if the host is in a meeting. And sending SMS/Email to the visitor once the Host is free.
 3. Making the host choose his meeting hours. A message - 'Host not available' can be shown on the screen in this case.
 4. Update feature for Host's details, by providing a seperate update tab in Host UI.
+5. Make the code more time efficient.
 
 **Database details :** <br />
 1. Visitor Name, Visitor Phone number, Visitor Email ID, Host Name, Date of visit, Entry time, status, Exit time <br />
