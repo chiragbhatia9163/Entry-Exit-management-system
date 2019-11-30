@@ -21,6 +21,9 @@ the 'Details not found' is shown on the screen.
 4. After the meeting ends, the visitor is supposed to enter his details in the Exit tab, which inturn triggers an email to him/her about his/her visit details.<br />
 5. The database is updated at every Entry and Exit operation with Entry and Exit time stamp of the Visitor.<br />
 
+Only name of the Host is asked from the visitor as it is very unlikely to make a visitor enter Phone no/Email ID of the Host.
+If two hosts name are same, that can be handeled by adding a suffix to such names while adding into the database.
+
 **Additional Features :**
 1. The application starts only after the user enters MySQL server connection password. This acts as a security measure<br />
 so that unauthorized people can't access the database.<br />
@@ -32,8 +35,7 @@ or does not enter a valid phone number a warning message is shown on the screen.
 1. As messaging service is paid, the trial version does not send SMS everytime to the Host. Only 3 SMS per day allowed.
 2. There's no option to confirm valid Email ID and Phone no of Visitor and Host. Entering wrong Email ID and Phone no leads to error.
 3. If the sql server password is wrongly entered, the application has to be restarted.
-4. Host's details once entered cannot be changed also same Host name cannot be entered again. Same names can be entered using a different
-suffix for every host.
+4. Host's details once entered cannot be changed. 
 
 **Future prospects :**
 1. Confirming phone numbers and email addresses by sending OTP/confirmation links.
