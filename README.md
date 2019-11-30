@@ -9,11 +9,11 @@ The Application has two parts:<br />
 
 **Host**
 1. This is the first part of the application which is to be done before entering visitor's details.
-2. It works by accepting details like Host's Name, Host's Phone number, Host's Email Address from the<br />
+2. It works by accepting details like Host's Full Name, Host's Phone number, Host's Email Address from the<br />
 user and storing them at the backend (by creating a mysql database).
 
 **Visitor :** <br />
-1. This part works by accepting details like Visitor's Name, Phone number, Email Address, Host Name from the<br />
+1. This part works by accepting details like Visitor's Name, Phone number, Email Address, Host's Full Name from the<br />
 user in the Entry tab and storing them at the backend (by creating a seperate mysql database).
 2. If the host details are there in the already created database, then they are directly fetched or otherwise
 the 'Details not found' is shown on the screen.
