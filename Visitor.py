@@ -100,19 +100,11 @@ def save_input_exit():
     for i in range(2):
         var=exitvalues[i].get()
         if var=='':
-            if lb2==None:
-                lb2=tk.Label(tab2,text = "Response left unfilled",pady=8,font = "Arial 10 italic", fg='red')
-                lb2.pack()
-            else:
-                lb2.configure(fg="red", text="Response left unfilled")
+            lb2.configure(fg="red", text="Response left unfilled")
             data_exit.clear()
             return False
         elif (i==1) and len(var)!=10:
-            if lb2==None:
-                lb2=tk.Label(tab2,text = "Phone number must be of 10 digits",pady=8,font = "Arial 10 italic", fg='red')
-                lb2.pack()
-            else:
-                lb2.configure(fg="red", text="Phone number must be of 10 digits")
+            lb2.configure(fg="red", text="Phone number must be of 10 digits")
             data_exit.clear()
             return False
         else:
@@ -125,19 +117,11 @@ def save_input_entry():
     for i in range(4):
         var=entryvalues[i].get()
         if var=='':
-            if lb1==None:
-                lb1=tk.Label(tab1,text = "Response left unfilled",pady=8,font = "Arial 10 italic", fg='red')
-                lb1.pack()
-            else:
-                lb1.configure(fg="red", text="Response left unfilled")
+            lb1.configure(fg="red", text="Response left unfilled")
             data_entries.clear()
             return False
         elif (i==1 or i==4) and len(var)!=10:
-            if lb1==None:
-                lb1=tk.Label(tab1,text = "Phone number must be of 10 digits",pady=8,font = "Arial 10 italic", fg='red')
-                lb1.pack()
-            else:
-                lb1.configure(fg="red", text="Phone number must be of 10 digits")
+            lb1.configure(fg="red", text="Phone number must be of 10 digits")
             data_entries.clear()
             return False
         else:
@@ -183,19 +167,11 @@ def get_input_exit():
         return
     else:
         if database_check_exit()==True:
-            if lb2==None:
-                lb2=tk.Label(tab2,text = "Updated",pady=8,font = "Arial 10 italic", fg='green')
-                lb2.pack()
-            else:
-                lb2.configure(fg="green", text="Updated")
+            lb2.configure(fg="green", text="Updated")
             for i in range(2):
                 exitvalues[i].delete(first=0,last=30)
         else:
-            if lb2==None:
-                lb2=tk.Label(tab2,text = "Details not correct",pady=8,font = "Arial 10 italic", fg='red')
-                lb2.pack()
-            else:
-                lb2.configure(fg="red", text="Details not correct")
+            lb2.configure(fg="red", text="Details not correct")
             return
     data_exit.clear()
 
@@ -209,18 +185,13 @@ def get_input_entry():
         email,number=database_check_hostname(data_entries[3])
         if email==None or number==None:
             data_entries.clear()
-            lb1=tk.Label(tab1,text = "Host does not exists",pady=8,font = "Arial 10 italic", fg='red')
-            lb1.pack()
+            lb1.configure(fg="red", text="Host does not exists")
         else:
             date,time=return_date_and_time()
             database_entry(data_entries,email,number,date,time)
             for i in range(4):
                 entryvalues[i].delete(first=0,last=30)
-            if lb1==None:
-                lb1=tk.Label(tab1,text = "Updated",pady=8,font = "Arial 10 italic", fg='green')
-                lb1.pack()
-            else:
-                lb1.configure(fg="green", text="Updated")
+            lb1.configure(fg="green", text="Updated")
             data_entries.clear()
 entry = "Visitor's Full Name", "Visitor's Phone Number (10 digits)", "Visitor's Email Address", "Host's Full Name"
 entryvalues=[]
@@ -232,8 +203,8 @@ lab=[]
 root = tk.Tk()
 root.title("Entry-Exit Management System")
 s = ttk.Style()
-s.theme_create( "mytheme", parent="alt", settings={"TNotebook": {"configure": {"tabmargins": [2, 5, 2, 0] } },"TNotebook.Tab": {"configure": {"padding": [100, 10], "font" : ('Arial', '13', 'bold') },"map":{"background": [("selected", "#ffffff")],"expand": [("selected", [1, 1, 1, 0])] } } } )
-s.theme_use("mytheme")
+s.theme_create( "ytheme", parent="alt", settings={"TNotebook": {"configure": {"tabmargins": [2, 5, 2, 0] } },"TNotebook.Tab": {"configure": {"padding": [100, 10], "font" : ('Arial', '13', 'bold') },"map":{"background": [("selected", "#ffffff")],"expand": [("selected", [1, 1, 1, 0])] } } } )
+s.theme_use("ytheme")
 notebook = ttk.Notebook(root)
 tab1 = tk.Frame(notebook)
 notebook.add(tab1, text="Entry")
@@ -247,6 +218,9 @@ button1=tk.Button(tab1, text = 'submit', pady=1, font = "Arial 10 bold", activeb
 button1.pack()
 button1.config(command = get_input_entry)
 tk.Label(tab1,text = '').pack()
+lb1=tk.Label(tab1,text = '')
+lb1.pack()
+tk.Label(tab1,text = '').pack()
 tab2 = tk.Frame(notebook,)
 notebook.add(tab2, text="Exit")
 for field in entry[0:2]:
@@ -258,7 +232,10 @@ tk.Label(tab2,text = '').pack()
 button2=tk.Button(tab2, text = 'submit', pady=1, font = "Arial 10 bold", activebackground= "#ffffff")
 button2.pack()
 button2.config(command = get_input_exit)
+tk.Label(tab2,text = '').pack()
+lb2=tk.Label(tab2,text = '')
+lb2.pack()
+tk.Label(tab2,text = '').pack()
 notebook.grid(row=0, column=0, sticky="nw")
 root.after(10, databaseconnection)
 root.mainloop()
-
