@@ -1,4 +1,18 @@
 # -*- coding: utf-8 -*-
+# Download Python 3 and MySQL from links provided in description.
+# Setup MySQL password for server connection.
+# This password works as a security key for this application
+
+# Function Description :
+# database_connection() - Connects application to MySQL server, creates database if does not exists.
+# database_entry() - Enters data into the database.
+# get_input_entry(), save_input_entry() - Accepts values from the visitor and enters them into the database after checking the host name.
+# database_check_hostname() - Checks if host exists in atabase or not.
+# get_input_exit(), save_input_exit() - Accepts name and number of visitor and updates his/her exit time in database.
+# database_check_exit() - Checks if visitor details exist in database for updation or not.
+# return_date_and_time() - Returns current date and tme.
+# send_email(), sms() - Sends email and sms to the designated email id's and phone numbers respectively.
+
 import tkinter as tk
 from tkinter import ttk
 from tkinter import simpledialog
