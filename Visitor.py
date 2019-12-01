@@ -7,7 +7,7 @@
 # database_connection() - Connects application to MySQL server, creates database if does not exists.
 # database_entry() - Enters data into the database.
 # get_input_entry(), save_input_entry() - Accepts values from the visitor and enters them into the database after checking the host name.
-# database_check_hostname() - Checks if host exists in atabase or not.
+# database_check_hostname() - Checks if host exists in database or not.
 # get_input_exit(), save_input_exit() - Accepts name and number of visitor and updates his/her exit time in database.
 # database_check_exit() - Checks if visitor details exist in database for updation or not.
 # return_date_and_time() - Returns current date and tme.
