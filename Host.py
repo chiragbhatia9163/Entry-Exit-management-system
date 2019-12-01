@@ -1,4 +1,13 @@
+# -*- coding: utf-8 -*-
+# Download Python 3 and MySQL from links provided in description.
+# Setup MySQL password for server connection.
+# This password works as a security key for this application
 
+# Function Description :
+# database_connection() - Connects application to MySQL server, creates database if does not exists.
+# database_entry() - Enters data into the database.
+# get_input_entry(), save_input_entry() - Accepts values from the visitor and enters them into the database after checking the host name.
+# database_check_entry() - Checks if host exists in database or not.
 
 import tkinter as tk
 from tkinter import simpledialog
