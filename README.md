@@ -22,7 +22,7 @@ the 'Details not found' is shown on the screen.
 5. The database is updated at every Entry and Exit operation with Entry and Exit time stamp of the Visitor.<br />
 
 Only name of the Host is asked from the visitor as it is very unlikely to make a visitor enter Phone no/Email ID of the Host.
-If two hosts name are same, that can be handeled by adding a suffix to such names while adding into the database.
+To distinguish between two same name hosts, department can also be added in the database (In case of office records).
 
 **Additional Features :**
 1. The application starts only after the user enters MySQL server connection password. This acts as a security measure<br />
